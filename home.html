@@ -4,8 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./home.js"></script>
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="heading">
+      <h2 class="heading">ROCK PAPER SCISSORS !</h2>
+    </div>
+    <div>
+      <section class="section__button_group">
+        <div class="player__button__group">
+          <h3>Player</h3>
+          <button type="button" id="button__rock">ROCK</button>
+          <button type="button" id="button__paper">PAPER</button>
+          <button type="button" id="button__scissors">SCISSORS</button>
+          <div id="playerScore"></div>
+        </div>
+        <div class="computer__button__group">
+          <h3>Computer</h3>
+          <button type="button" id="computer__button__rock">ROCK</button>
+          <button type="button" id="computer__button__paper">PAPER</button>
+          <button type="button" id="computer__button__scissors">
+            SCISSORS
+          </button>
+          <div id="computerScore"></div>
+        </div>
+      </section>
+      <section class="section__results">
+        <div class="results">
+          <div id="result__text"></div>
+          <div id="result__final"></div>
+          <div id="play_again">
+            <button type="button" id="play_again_button">Play Again !</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./home.js"></script>
 </html>
